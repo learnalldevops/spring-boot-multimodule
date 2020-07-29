@@ -10,7 +10,7 @@
     </parent>
     <groupId>sample.multimodule</groupId>
     <artifactId>sample.multimodule</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.5</version>
     <packaging>pom</packaging>
     <name>Parent - Pom Aggregator</name>
     <description>This pom is a maven aggregator that contains all application modules. Also, include all
@@ -33,7 +33,7 @@
 		<connection>scm:https://github.com/Deeps333/spring-boot-multimodule.git</connection>
 		<url>https://github.com/Deeps333/maven-modular.git</url>
                 <developerConnection>scm:git:https://github.com/Deeps333/spring-boot-multimodule.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>v0.0.5</tag>
 		
 </scm>
 <distributionManagement>
