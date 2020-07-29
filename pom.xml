@@ -29,6 +29,23 @@
       <module>application</module>
     </modules>
 
+<scm>
+		<connection>scm:https://github.com/Deeps333/spring-boot-multimodule.git</connection>
+		<url>https://github.com/Deeps333/maven-modular.git</url>
+                <developerConnection>scm:git:https://github.com/Deeps333/spring-boot-multimodule.git</developerConnection>
+		<tag>HEAD</tag>
+		
+</scm>
+<distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <url>http://3.130.254.145:8081/nexus/content/repositories/releases</url>
+  </repository>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://3.130.254.145:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
     <dependencies>
 
       <!-- Spring Boot dependencies -->
@@ -47,5 +64,30 @@
 		  </dependency>
     </dependencies>
 
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.2</version>
+        <configuration> <!-- Compile java 7 compatible bytecode -->
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M1</version>
+        <configuration>
+               <autoVersionSubmodules>true</autoVersionSubmodules>
+               <pushChanges>false</pushChanges>
+               <localCheckout>true</localCheckout>
+               <tagNameFormat>v@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+      
+    </plugins>
+  </build>
 </project>
 
