@@ -30,9 +30,9 @@
     </modules>
 
 <scm>
-		<connection>scm:https://github.com/Deeps333/spring-boot-multimodule.git</connection>
-		<url>https://github.com/Deeps333/maven-modular.git</url>
-                <developerConnection>scm:git:https://github.com/Deeps333/spring-boot-multimodule.git</developerConnection>
+		<connection>scm:https://github.com/singhmohini/spring-boot-multimodule.git</connection>
+		<url>https://github.com/singhmohini/maven-modular.git</url>
+                <developerConnection>scm:git:https://github.com/singhmohini/spring-boot-multimodule.git</developerConnection>
 		<tag>HEAD</tag>
 		
 </scm>
@@ -43,7 +43,7 @@
   </repository>
   <snapshotRepository>
     <id>nexus</id>
-    <url>http://18.224.181.169:8081/nexus/content/repositories/snapshots</url>
+    <url>3.136.97.178:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
 </distributionManagement>
     <dependencies>
